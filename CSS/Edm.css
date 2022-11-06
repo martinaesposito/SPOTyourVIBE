@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font del personaggio */
+@font-face {
+	font-family: edm;
+	src: url("../MATERIALI/Fonts/edm/PerspireRegular-gopR.ttf")
+	}
+
+.parent {
+	background-color:#6c81ff;
+	}
+
+.identikit {
+	background-color: #6c81ff;
+}
+
+.titolo  {
+	font-family:'edm', cursive;
+	}
