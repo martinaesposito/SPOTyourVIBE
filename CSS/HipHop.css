@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: graffiti;
+	src: url("../MATERIALI/Fonts/Hip Hop/MARSNEVENEKSK-Regular.otf")
+	}
+ 
+.parent {
+	background-color:#fff194;
+	}
+
+.identikit {
+	background-color: #fff194;
+}
+
+.titolo  {
+	font-family:'graffiti', cursive;
+	}
