@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* font del personaggio */
+@font-face {
+	font-family: rocker;
+	src: url("../MATERIALI/Fonts/NewRocker/NewRocker-Regular.ttf")
+	}
+
+.parent {
+	background-color:#f28986;
+	}
+
+.identikit {
+	background-color: #f28986;
+}
+
+.titolo  {
+	font-family:'Rocker', cursive;
+	}

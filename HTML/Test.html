@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TEST</title>
+	<link rel="stylesheet" href="../CSS/Test.css" type="text/css"> 
+	<link rel="shortcut icon" type="image/x-icon" href="../MATERIALI/Immagini/v-02.png"/>	
+</head>
+
+<body>
+		
+	<!--bottone per ritornare alla home-->
+	<a href="Home.html" class="home">home</a> 
+	
+	<!--div di testo informativo-->
+	<div class="intro"> Ci vogliono solo pochi minuti<br><br>
+		 Ti basta rispondere sinceramente<br><br>
+	     Scopri nuova musica nella playlist che abbiamo pensato per te!
+	</div>
+	
+	<!--DIVONE domanda 1-->	
+	<div  class="posizione"> 
+		<!--Domanda 1-->	
+		<p class="question">Quando e dove ascolti la tua musica?</p>
+		<!--Risposte 1-->
+		<btn class="d1" onclick="selezione(1,'indie',1)">Per strada mentre cammino</btn>
+		<btn class="d1" onclick="selezione(1,'rock',2)">Steso in un prato in collina</btn>
+		<btn class="d1" onclick="selezione(1,'pop',3)">Nel mio locale notturno preferito</btn>
+		<btn class="d1" onclick="selezione(1,'hiphop',4)">Nel mio luogo di ritrovo con il mio branco di amici</btn>
+		<btn class="d1" onclick="selezione(1,'edm',5)">A notte fonda nel mio rifugio</btn>
+	</div>
+	
+		<!--DIVONE domanda 2-->	
+	<div  class="posizione"> 
+		<!--Domanda 1-->	
+		<p class="question">Devi stare via qualche giorno con gli amici: cosa non può mancare in valigia?</p>
+		<!--Risposte 1-->
+		<btn class="d2" onclick="selezione(2,'rock',1)">La maglietta della mia band preferita</btn>
+		<btn class="d2" onclick="selezione(2,'edm',2)">Le mie cuffie</btn>
+		<btn class="d2" onclick="selezione(2,'hiphop',3)">Dai, magari lo skateboard torna utile</btn>
+		<btn class="d2" onclick="selezione(2,'pop',4)">Un capo elegante, non si sa mai</btn>
+		<btn class="d2" onclick="selezione(2,'indie',5)">Il mio taccuino</btn>
+		</div>
+	
+	<!--DIVONE domanda 3-->	
+	<div  class="posizione"> 
+		<!--Domanda 3-->	
+		<p class="question">Ascolti la musica per:</p>
+		<!--Risposte 3-->
+		<btn class="d3" onclick="selezione(3,'indie',1)">Spingermi verso sensazioni sempre nuove</btn>
+		<btn class="d3" onclick="selezione(3,'hiphop',2)">Carpire energia</btn>
+		<btn class="d3" onclick="selezione(3,'pop',3)">Vivere il momento</btn>
+		<btn class="d3" onclick="selezione(3,'rock',4)">Sentirmi capito</btn>
+		<btn class="d3" onclick="selezione(3,'edm',5)">Rilassarmi e ricaricare le batterie</btn>
+	</div>	
+		
+		<!--DIVONE domanda 4-->	
+	<div  class="posizione"> 
+		<!--Domanda 4-->	
+		<p class="question marginbottom">Il tuo migliore amico esce con gente nuova:  
+</p>
+		<!--Risposte 4-->
+		<btn class="d4" onclick="selezione(4,'edm',1)" >Mi sento messo da parte, ma ne approfitto per stare con me stesso</btn>
+		<btn class="d4" onclick="selezione(4,'pop',2)">Stupendo, mi aggrego!</btn>
+		<btn class="d4" onclick="selezione(4,'rock',3)">Va bene così, noi ci vediamo domani</btn>
+		<btn class="d4" onclick="selezione(4,'indie',4)">Sono felice per lui!</btn>
+		<btn class="d4" onclick="selezione(4,'hiphop',5)">Questi chi sono? Tengo molto a lui</btn>
+	</div>	
+		
+		<!--DIVONE domanda 5-->	
+	<div  class="posizione"> 
+		<!--Domanda 5-->	
+		<p class="question">Descriveresti il tuo sound come:</p>
+		<!--Risposte 5-->
+		<btn class="d5" onclick="selezione(5,'rock',1)">Caldo, vintage, vibrante</btn>
+		<btn class="d5" onclick="selezione(5,'edm',2)">Elettrico, veloce, circolare</btn>
+		<btn class="d5" onclick="selezione(5,'indie',3)">Strano, colorato, complesso</btn>
+		<btn class="d5" onclick="selezione(5,'pop',4)">Energico, limpido, luminoso</btn>
+		<btn class="d5" onclick="selezione(5,'hiphop',5)">Magnetico, ruggente, profondo</btn>
+	</div>	
+		
+		<!--DIVONE domanda 6-->	
+	<div  class="posizione"> 
+		<!--Domanda 6-->	
+		<p class="question">Un giorno ti piacerebbe:</p>
+		<!--Risposte 6-->
+		<btn class="d6" onclick="selezione(6, 'indie', 1)">Esplorare un mercatino di articoli vintage</btn>
+		<btn class="d6" onclick="selezione(6, 'rock', 2)">Diventare bravissimo a suonare la chitarra</btn>
+		<btn class="d6" onclick="selezione(6, 'edm', 3)">Andare a un festival nel nord Europa</btn>
+		<btn class="d6" onclick="selezione(6, 'pop', 4)">Passare un week end su una spiaggia tropicale</btn>
+		<btn class="d6" onclick="selezione(6, 'hiphop',5)">Poter scrivere con bombolette spray sui muri di una città</btn>
+	</div>	
+		
+		<!--DIVONE domanda 7-->	
+	<div  class="posizione"> 
+		<!--Domanda 7-->	
+		<p class="question">Guarda fuori, sta cambiando il tempo!</p>
+		<!--Risposte 7-->
+		<btn class="d7" onclick="selezione(7,'hiphop',1)">Spero che la strada resti asciutta</btn>
+		<btn class="d7" onclick="selezione(7,'edm',2)">Spero che piova così posso rilassarmi un pochino a casa</btn>
+		<btn class="d7" onclick="selezione(7,'pop',3)">Spero che sia una serata calda per uscire con gli amici</btn>
+		<btn class="d7" onclick="selezione(7,'rock',4)">Fa lo stesso, pensavo di improvvisare</btn>
+		<btn class="d7" onclick="selezione(7,'indie',5)">Spero che si metta a piovere così può spuntare l’arcobaleno</btn>
+	</div>	
+	
+		<!--DIVONE bottone VAIALRISULTATO-->	
+	<div class="posizione-finetest"> 
+		<btn class="finetest" onclick="salvaRis()">Spot your vibe</btn>
+	</div>
+
+</body>
+	
+<script src="../JAVASCRIPT/test.js"></script>	
+	
+</html>

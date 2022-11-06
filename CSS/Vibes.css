@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font collegato */
+@font-face {
+	font-family: montserrat;
+	src: url("../MATERIALI/Fonts/Montserrat/Montserrat-ExtraLight.ttf")
+	}
+
+/*proprietà per eliminare qualsiasi margine esterno dall'interfaccia e rendere gli elementi aderenti alla finestra web*/
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+	font-size : 15px
+}
+
+/*proprietà comune ai link a*/
+a {
+	color:black;
+}
+
+/*proprietà comune alle gif img*/
+img {
+	height: 50vh;
+	width: auto;
+}
+
+/*proprietà della classe col-4 applicata al div esterno di oni personaggio */
+.col-4 {
+    position: relative;
+	float: left;
+	
+    width: 33.33%;
+    height: 50vh;
+	
+	/*proprietà di posizione che gli permettono di avere gli elementi allineati al centro*/
+	display:flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*sottoclasse: proprietà generali comuni ai div overlay-... */
+[class*="overlay"] {
+	position: absolute;
+	
+	width:100%;
+	height: 100%;
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	opacity: 0;
+	transition: 0.2s ease;
+}
+
+/*proprietà specifiche overlay-indie*/
+.overlay-indie {
+	background-color: #88e2c4;
+	
+}
+
+/*proprietà specifiche overlay-pop*/
+.overlay-pop {
+	background-color: #ffabe9;
+}
+
+/*proprietà specifiche overlay-rock*/
+.overlay-rock {
+	background-color: #ef7878;
+}
+
+/*proprietà specifiche overlay-edm*/
+.overlay-edm {
+	background-color: #6c81ff;
+}
+
+/*proprietà specifiche overlay-hiphop*/
+.overlay-hiphop {
+	background-color: #ffee94;
+}
+
+
+/*proprietà che fa sì che passando col mouse sopra a un div con classe col-4 il div overlay associato diventi visibile*/
+.col-4:hover [class*="overlay"] {
+	opacity: 1;
+}
+
+
+/*colore div indie*/
+.indie { 
+	background-color: #88e2c4;
+}
+
+/*colore div pop*/
+.pop { 
+	background-color: #ffabe9;
+}
+
+/*colore div rock*/
+.rock { 
+	background-color: #F08787;
+}
+
+/*colore div edm*/
+.edm { 
+	background-color: #6c81ff;
+}
+
+/*proprietà di posizione del div hiphop*/
+.hiphop { 
+	background-color: #ffee94;
+}
+
+
+/*proprietà di posizione del bottone home*/
+.home { 
+	float: left;
+	
+	height: 50vh;
+	
+	display:flex;
+	justify-content: center;
+}
+
+
+/*sottoclasse: proprietà generali comuni ai collegamenti scritta-...*/
+[class*="scritta"] { 
+	text-decoration: none;
+} 
+
+[class*="scritta"]:hover { 
+	text-decoration: underline;
+	
+	cursor:pointer;
+} 
+
+/*proprietà specifiche al collegamento scritta-home*/
+.scritta-home { 
+	
+	width: 20%;
+	
+	padding: 9px;
+	border: solid black 1px;
+	border-radius: 20px;
+}
+.scritta-home:hover { 
+	
+	border: solid #1DB954 1px;
+	color: #1DB954;
+	text-decoration: none;
+}
+
+
+/*effetto responsive 1024px*/
+@media screen and (max-width: 1024px) {	
+	
+.col-4 {
+	width: 50%;
+}
+
+}
+
+/*effetto responsive 768*/
+@media screen and (max-width: 768px) {		
+	
+.col-4 {
+	width: 100%;
+  	height: 75vh;
+}	
+	
+img {
+	width: auto;
+	height: 70vh;
+}
+}

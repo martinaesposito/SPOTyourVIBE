@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font collegato */
+@font-face {
+	font-family: montserrat;
+	src: url("../MATERIALI/Fonts/Montserrat/Montserrat-ExtraLight.ttf")
+	}
+
+
+/* specifica al body perchè non ci siano spazi lungo i margini */
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-family: 'montserrat', sans-serif;
+	text-align: center;
+	}
+
+/* For desktop: */ 
+
+
+/* classe che fa sì che i DIVONI si dividano a metà lo schermo */ 
+.col-6 {
+	width: 50%;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+/* DIVONE sx */
+.parent {
+	float:left;
+	height: 250vh;
+	}
+
+.gif {
+	margin: 10% 0;
+	width:100%;
+	}
+
+.identikit {
+	width:100%;
+	height: 100vh;
+
+	font-size: 22px;
+}
+
+/* DIVONE dx */
+.titolo  {
+	margin:20% 0 12% 0;
+	
+	font-size: 400%;
+	}
+
+.descrizione {
+	display: block;
+	margin: 5% 10%;
+	
+	font-size: 14px;
+	}
+
+/* poprietà del div contenente l'iframe con la playlist*/
+.playlist {
+	width: 70%;
+	margin: 20% 0;
+		}
+
+/* div contenente i due pulsanti "torna alla home" e "torna alle vibes"*/ 
+.pulsanti {
+	font-weight: bolder;
+}
+
+/* poprietà sepcifiche dei pulsanti*/
+.pulsante { 
+	color:black;
+    text-decoration: none; 
+	border: 1px solid black; 
+	border-radius: 20px;
+	padding: 8px;
+	margin-bottom: 15%;
+    width: 150px;
+	display: block;
+	}
+
+.pulsante:hover { 
+	color: #1DB954;
+    border: 1px solid #1DB954; 
+	curso:pointer;
+	}
+
+
+/*proprietà che fa sì che i due DIVONI si incolonnino l'uno sotto l'altro - che non siano più affiancati*/
+
+/* For i-pad: */
+@media screen and (max-width: 1024px) {	
+	
+.col-6 {
+	width: 100%;
+}
+.identikit {
+	height: 40vh;
+}
+.gif {
+	margin: 5% 0;
+}
+.parent {
+	float:none;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 180vh;
+	}
+	
+.pulsanti {
+	padding-bottom: 30vh;
+}
+
+}
+
+/* For i-pad: */
+@media screen and (max-width: 768px) {
+	
+.parent {
+	height: 1000%;
+	}
+	
+.pulsanti {
+	margin: 5vh 0;
+}
+
+	}

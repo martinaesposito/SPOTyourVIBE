@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font collegato */
+@font-face {
+	font-family: montserrat;
+	src: url("../MATERIALI/Fonts/Montserrat/Montserrat-ExtraLight.ttf")
+	}
+
+
+/* proprietà specifica del body e generali dei suoi elementi*/
+body {
+	top:0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-family: 'montserrat', sans-serif;
+	text-align: center;
+	}
+
+/* proprietà specifiche del contenitore dell'intro al test */
+.intro  { 
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	height: 80vh;
+	box-sizing: border-box;
+	}
+
+
+
+
+
+/* proprietà esclusive del link HOME - relative alla sua posizione */
+.home {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 1%;
+	padding: 5px;
+    width: 100px;
+	
+	color:black;
+	border: 1px solid black;
+    text-decoration: none; 
+	font-weight:bolder;
+	font-size : 95%;
+}
+
+.home:hover {
+	text-decoration:underline;
+	border: 1px solid #1DB954;
+	color:#1DB954;
+	}
+
+
+
+
+
+
+/*sottoclasse: proprietà comuni a tutti i div posizione */
+.posizione {
+	display:flex;
+	width: 100%;	
+	height: 500px;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+/* proprietà comuni a tutti i paragrafi DOMANDA*/
+.question {
+	border: none;
+	width:100%;
+	font-weight:bolder;
+	font-size : 15px;
+	}
+
+
+
+
+/* proprietà realative ai bottoni (risposte e bottone spot you vibe) */
+btn { 
+	text-decoration: none; 
+	border: 1px solid grey;
+	cursor: pointer;
+	color:black;
+}
+btn:hover { 
+	text-decoration: none; 
+	border: 1px solid #1DB954;
+	color:#1DB954;
+}
+
+
+
+
+/* sottoclasse: proprietà comuni a tutti i bottoni RISPOSTA*/
+[class*="d"] {
+	border-radius: 30px; 
+	padding:10px 6px;
+	width: 35%; 
+	min-width: 300px;
+	font-size : 14.7px;
+	margin: 7px 0;
+}
+
+
+
+
+
+
+
+/* proprietà div contenente il bottone Spot Your Vibe*/
+.posizione-finetest {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-around;
+	height: 100px;
+	margin-bottom:20vh;
+}
+
+/*proprietà bottonne Spot Your Vibe*/
+.finetest {
+	padding: 15px 25px;
+	border: 1px solid black; border-radius: 25px;
+	font-size : 14.7px; 
+	font-weight:bold;
+	width: 15%;
+}
+
+.finetest:hover {
+	text-decoration: none;
+	border: 1px solid #1DB954;
+}
+
+/*classe che viene attribuita all'ultima risposta selezionata e rimossa da tutte le altre*/
+.clickedon {
+	display: block; 
+	color: #1DB954; 
+	background-color: white;
+	border: 1px solid #1DB954; 
+}
+
+
+/*EFFETTO RESPONSIVE 1024px*/
+@media screen and (max-width: 1024px) {	
+	
+.posizione {
+	margin-bottom: 10%;
+}	
+.question 	{
+	box-sizing: border-box;
+	padding: 1% 10%;
+}
+	
+[class*="d"] {
+	width: 45%; 
+	font-size : 14px;
+	padding: 12px 10px;
+}	
+	
+}	
+
+/*EFFETTO RESPONSIVE 768px*/
+@media screen and (max-width: 768px) {	
+
+.intro  { 
+	padding: 0 5%;
+	}
+	
+.posizione-finetest {
+	margin-bottom: 30vh;
+}
+	
+.finetest {
+	width: 30%;
+}
+}

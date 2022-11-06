@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font del personaggio */
+@font-face {
+	font-family: didot;
+	src: url("../MATERIALI/Fonts/Pop/HenriDidot.otf")
+	}
+
+.parent {
+	background-color:#ffabfb;
+	}
+.identikit {
+	background-color: #ffabfb;
+}
+
+.titolo  {
+	font-family:'didot', cursive;
+	}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Font Incorporato*/
+@font-face {
+	font-family: montserrat;
+	src: url("../MATERIALI/Fonts/Montserrat/Montserrat-ExtraLight.ttf")
+	}
+
+/*proprietà per eliminare qualsiasi margine esterno dall'interfaccia e rendere gli elementi aderenti alla finestra web*/
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-family: 'montserrat', sans-serif;
+	text-align: center;
+	}
+
+
+/*proprietà specifiche del Titolo*/
+.title  {
+	font-size: 18px;
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	font-weight:bolder;
+	}
+
+/*proprietà generali dei paragrafi*/
+p  {
+	box-sizing: border-box;
+	padding: 0 10% ;
+	font-size: 15px;
+	width: 100%;
+	}
+
+/*proprietà generali del div contenente Identikit degli autori*/
+.center  {
+	box-sizing: border-box;
+	display:flex;
+	position: relative;
+	margin: 10% 0;
+	padding: 0 50px ;
+	justify-content: space-around;
+	width: 100%;
+	}
+
+/*proprietà generali degli autori*/
+
+.AUTORI {
+	max-width: 25%;
+	min-width: 250px;
+	}
+
+/*proprietà in comune di foto Ari e foto Marti*/
+img {
+	min-width: 150px;
+	}
+
+/*proprietà in comune di nome Ari e nome Marti*/
+.nome {
+	font-size: 18px; 
+	font-weight: bold; 
+	width:100%;
+	}
+
+/*proprietà in comune di descrizione Ari e descrizione Marti*/
+.descrizione{
+	font-size: 14px; 
+	width:100%;
+	}
+
+/*proprietà generali dei collegamenti*/
+a {
+	color: black;
+	border: solid black 1px;
+	text-decoration: none;
+    width: 100px;
+	font-weight:bolder;
+	font-size : 95%;
+	display: block;
+	position: absolute;
+	top: 0;
+	float: left;
+	margin: 1%;
+	padding:5px;
+}
+
+a:hover {
+	color: #1DB954;
+	border: solid #1DB954 1px;
+	text-decoration: none;
+	}
+
+/*proprietà acquisite dai corpi di testo inseriti in <span></span>*/
+.bold {
+	font-weight: bold
+	}
+
+.italic {
+	font-style: italic
+	}
+
+/*EFFETTO RESPONSIVE 1024*/
+
+@media screen and (max-width: 1024px) {
+	
+.center  {
+	margin: 15% 0% 0% 0%;
+	}
+
+.AUTORI {
+	max-width: 30%;
+	}
+}
+
+/*EFFETTO RESPONSIVE 768*/
+@media screen and (max-width: 768px) {
+
+.title  {
+	margin-top: 150px;
+	margin-bottom: 50px;
+	}
+	
+.center  {
+	margin: 20% 0% 0% 0%;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 250px;
+	}
+	
+.AUTORI {
+	padding-bottom: 10%;
+	}
+}
+	

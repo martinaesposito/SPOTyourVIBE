@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* font del personaggio */
+@font-face {
+	font-family: arabesque;
+	src: url("../MATERIALI/Fonts/Arabesque/HWT Arabesque W00 Regular/@font-face/19379417f31c9f6fa8962bc7517692b7.ttf")
+	}
+.parent {
+	background-color:#88e2c4;
+	}
+
+.identikit {
+	background-color: #88e2c4;
+}
+
+.titolo  {
+	font-family: 'arabesque', sans-serif;
+	}

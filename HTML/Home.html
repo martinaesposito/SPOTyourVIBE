@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>SPOTyourVIBE</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/Home.css" > 
+	<link rel="shortcut icon" type="image/x-icon" href="../MATERIALI/Immagini/v-02.png"/>
+	<script src="../JAVASCRIPT/jquery-3.6.0.min.js"></script>
+</head>
+
+	
+<body>
+	<!-- Pulsanti alle pagine Idea e Vibes -->
+	<a href="Idea.html" class="idea">idea</a> 
+	<a href="Vibes.html" class="vibes">vibes</a>
+	
+	
+	<!-- Div centrale contenente il sottotitolo e il pulsante per inziare il quiz -->
+	<div class="center">
+		<p class="subtitle">Cosa dice la tua personalit&agrave; della musica che ascolti</p>
+		<a href="Test.html" class="faiiltest">Fai il test</a>
+	</div> 
+	
+	 
+	<!-- "condividi" è un pulsante: al click del mouse il link del file html (il link della pagina web) viene copiato negli appunti e la scritta "url copiato negli appunti" diventa visibile, per poi scomparire dopo un tempo stabilito-->
+	<btn class="condividi" onclick="condividi()">condividi</btn> 
+	
+	<div id="condividi">
+		 <div id="link">URL copiato negli appunti</div> 
+	</div>
+
+</body>
+	
+<script src="../JAVASCRIPT/Condividi.js"></script>	
+	
+</html>
