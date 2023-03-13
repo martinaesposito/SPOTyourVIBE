@@ -131,7 +131,7 @@ iframe {
 }
 
 .pulsante{
-	width:100%;
+	width:70%;
 }
 
 }
@@ -140,7 +140,11 @@ iframe {
 @media screen and (max-width: 768px) {
 	
 .pulsanti {
-	margin: 5vh 0;
+	margin: auto;
 }
+
+.titolo  {
+	font-size: 700%;
+	}
 
 	}
