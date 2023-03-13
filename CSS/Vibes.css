@@ -26,7 +26,7 @@ a {
 
 /*proprietà comune alle gif img*/
 img {
-	height: 50vh;
+	height: 45vh;
 	width: auto;
 }
 
@@ -164,8 +164,12 @@ img {
 	
 .col-4 {
 	width: 50%;
+	height: 75vh;
 }
 
+img{
+	height:80%;
+}
 }
 
 /*effetto responsive 768*/
