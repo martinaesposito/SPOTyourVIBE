@@ -90,7 +90,7 @@ body{
 .pulsante:hover { 
 	color: #1DB954;
     border: 1px solid #1DB954; 
-	curso:pointer;
+	cursor:pointer;
 	}
 
 
@@ -101,13 +101,20 @@ body{
 	
 .col-6 {
 	width: 100%;
-	overflow-y: hidden;
 }
-.identikit {
-	height: 40vh;
-}
+
+.titolo  {
+	margin:20% 0 5% 0;
+	font-size: 1000%;
+	}
+
+.descrizione {
+	margin: 10% 10%;
+	}
+
 .gif {
 	margin: 5% 0;
+	width:100%;
 }
 .parent {
 	float:none;
