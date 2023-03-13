@@ -18,13 +18,14 @@ body{
 	text-align: center;
 	}
 
+
 /* For desktop: */ 
 
 
 /* classe che fa sì che i DIVONI si dividano a metà lo schermo */ 
 .col-6 {
 	width: 50%;
-	display:flex;
+	display:flexbox;
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
@@ -34,57 +35,51 @@ body{
 /* DIVONE sx */
 .parent {
 	float:left;
-	width:50%;
-	height: 100vh;
 	overflow-y: hidden;
 	}
 
 .gif {
-	margin: 2% 0% 10% 0%;
+	margin: 2% 0%;
 	width:85%;
 	}
 
-.identikit {
-	width:100%;
-	height: 100vh;
-
-	font-size: 22px;
-}
 
 /* DIVONE dx */
 .titolo  {
-	margin:5% 0 2% 0;
+	margin:10% 0 2% 0;
 	font-size: 600%;
 	}
 
 .descrizione {
 	display: block;
-	margin: 2% 10%;
+	margin: 5% 10%;
 	
 	font-size: 14px;
 	}
 
 /* poprietà del div contenente l'iframe con la playlist*/
-.playlist {
-	width: 70%;
+iframe {
 	margin: 10% 0;
-		}
+}
+		
 
 /* div contenente i due pulsanti "torna alla home" e "torna alle vibes"*/ 
 .pulsanti {
 	font-weight: bolder;
+	margin-bottom:30vh;
 }
 
 /* poprietà sepcifiche dei pulsanti*/
 .pulsante { 
+	display: block;
 	color:black;
     text-decoration: none; 
 	border: 1px solid black; 
 	border-radius: 20px;
 	padding: 8px;
-	margin-bottom: 15%;
+	margin: 5% auto;
+	font-size: 2.5vh;
     width: 150px;
-	display: block;
 	}
 
 .pulsante:hover { 
@@ -101,6 +96,8 @@ body{
 	
 .col-6 {
 	width: 100%;
+	height:auto;
+	overflow-y: visible ;
 }
 
 .titolo  {
@@ -127,7 +124,14 @@ body{
 	
 
 .pulsanti {
-	padding-bottom: 30vh;
+	padding: 10vh 0;
+	width:70%;
+	height:auto;
+	margin:auto;
+}
+
+.pulsante{
+	width:100%;
 }
 
 }
