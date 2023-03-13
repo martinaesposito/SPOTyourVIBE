@@ -1,7 +1,7 @@
 
 ![logo](./MATERIALI/Immagini/titolo%20colorato.gif)
 		
-### SPOTyourVIBE è il quiz che ti permette di scoprire la tua ***vibe***: il genere musicale che più corrisponde alla tua personalità. 
+#### SPOTyourVIBE è il quiz che ti permette di scoprire la tua ***vibe***: il genere musicale che più corrisponde alla tua personalità. 
 
 
 Dopo aver risposto ad alcune domande sulle tue abitudini potrai scoprire chi tra Coco, Will, Josh, Olivia e Tyler è più simile a te e ascoltare una playlist spotify del genere di musica a cui è associato.
