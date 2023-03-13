@@ -28,17 +28,20 @@ body{
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
+	overflow-y:scroll;
 }
 
 /* DIVONE sx */
 .parent {
 	float:left;
-	height: 250vh;
+	width:50%;
+	height: 100vh;
+	overflow-y: hidden;
 	}
 
 .gif {
-	margin: 10% 0;
-	width:100%;
+	margin: 2% 0% 10% 0%;
+	width:85%;
 	}
 
 .identikit {
@@ -50,14 +53,13 @@ body{
 
 /* DIVONE dx */
 .titolo  {
-	margin:20% 0 12% 0;
-	
-	font-size: 400%;
+	margin:5% 0 2% 0;
+	font-size: 600%;
 	}
 
 .descrizione {
 	display: block;
-	margin: 5% 10%;
+	margin: 2% 10%;
 	
 	font-size: 14px;
 	}
@@ -65,7 +67,7 @@ body{
 /* poprietà del div contenente l'iframe con la playlist*/
 .playlist {
 	width: 70%;
-	margin: 20% 0;
+	margin: 10% 0;
 		}
 
 /* div contenente i due pulsanti "torna alla home" e "torna alle vibes"*/ 
@@ -99,6 +101,7 @@ body{
 	
 .col-6 {
 	width: 100%;
+	overflow-y: hidden;
 }
 .identikit {
 	height: 40vh;
@@ -112,9 +115,10 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	height: 180vh;
+	height: auto;
 	}
 	
+
 .pulsanti {
 	padding-bottom: 30vh;
 }
@@ -123,10 +127,6 @@ body{
 
 /* For i-pad: */
 @media screen and (max-width: 768px) {
-	
-.parent {
-	height: 1000%;
-	}
 	
 .pulsanti {
 	margin: 5vh 0;
