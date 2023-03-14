@@ -30,19 +30,19 @@ img {
 	width: auto;
 
 	overflow-x: hidden;
-	
+	object-fit: scale-down;
 }
 
 /*proprietà della classe col-4 applicata al div esterno di oni personaggio */
 .col-4 {
     position: relative;
 	
+	
     width: 33.33%;
     height: 50vh;
 	
 	/*proprietà di posizione che gli permettono di avere gli elementi allineati al centro*/
 	display:flex;
-	flex-direction: column;
     justify-content: center;
     align-items: center;
 }
