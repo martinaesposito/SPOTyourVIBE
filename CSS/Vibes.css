@@ -36,8 +36,8 @@ img {
 /*proprietà della classe col-4 applicata al div esterno di oni personaggio */
 .col-4 {
     position: relative;
-	
-	
+	float:left;
+
     width: 33.33%;
     height: 50vh;
 	
